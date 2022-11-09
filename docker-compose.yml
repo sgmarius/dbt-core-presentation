@@ -12,3 +12,8 @@ services:
     volumes:
       - ./pgsql-mnt/data:/var/lib/postgresql/data
       - ./pgsql-mnt/world:/docker-entrypoint-initdb.d
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.3.latest
+    volumes:
+      - ./dbt-mnt/projects:/usr/app
+      - ./dbt-mnt/profiles:/root/.dbt
