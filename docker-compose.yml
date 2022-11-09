@@ -6,8 +6,9 @@ services:
       POSTGRES_USER: "root"
       POSTGRES_PASSWORD: "password"
       POSTGRES_DB: "dbt"
+      PGDATA: "/tmp"
     ports:
       - "5432:5432"
     volumes:
-      - ./pgsql-mnt/dvdrental:/var/lib/postgresql/data
-      - ./pgsql-mnt/initData.sql:/docker-entrypoint-initdb.d/
+      - ./pgsql-mnt/data:/var/lib/postgresql/data
+      - ./pgsql-mnt/world:/docker-entrypoint-initdb.d
