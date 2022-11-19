@@ -5,6 +5,7 @@
 -- Finland, http://www.stat.fi/worldinfigures.
 --
 
+create database modeling_layer;
 create database source_layer;
 \connect source_layer;
 
