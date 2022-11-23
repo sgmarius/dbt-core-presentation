@@ -1,24 +1,23 @@
 presentation:
   outputs:
-
     dev:
       type: postgres
       threads: 2
-      host: 172.21.0.2
+      host: 172.21.0.3
       port: 5432
       user: root
       pass: password
-      dbname: modeling_layer
+      dbname: source_layer
       schema: dev_schema
 
     prod:
       type: postgres
       threads: 2
-      host: 172.21.0.2
+      host: 172.21.0.3
       port: 5432
       user: root
       pass: password
-      dbname: modelling_layer
+      dbname: source_layer
       schema: prod_schema
 
-  target: dev
+  target: prod
