@@ -1,4 +1,5 @@
 /pgsql-mnt/data
 /dbt-mnt/projects/logs
+/dbt-mnt/projects/*/target
 .DS_Store
 .vscode
