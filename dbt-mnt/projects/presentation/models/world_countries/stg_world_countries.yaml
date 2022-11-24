@@ -17,8 +17,9 @@ models:
     columns:
       - name: id
         tests:
-          - unique
+          # - unique
           - not_null
+      # other examples: too lazy to fill:
       # - name: status
       #   description: '{{ doc("order_status") }}'
       #   tests:
